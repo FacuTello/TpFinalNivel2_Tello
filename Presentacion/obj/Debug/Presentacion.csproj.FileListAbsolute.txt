@@ -1,0 +1,10 @@
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.Form1.resources
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\facun\OneDrive\Escritorio\TPFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.pdb
