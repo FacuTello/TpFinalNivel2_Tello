@@ -16,5 +16,17 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormSecundario ventanaSecundaria = new FormSecundario();
+            ventanaSecundaria.ShowDialog();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            FormSecundario modificar = new FormSecundario();
+            modificar.ShowDialog();
+        }
     }
 }
