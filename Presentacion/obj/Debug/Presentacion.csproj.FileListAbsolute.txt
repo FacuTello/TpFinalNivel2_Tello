@@ -19,3 +19,8 @@ C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\bin\Debug\Dominio.dll
+C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\bin\Debug\Negocio.dll
+C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\bin\Debug\Dominio.pdb
+C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete

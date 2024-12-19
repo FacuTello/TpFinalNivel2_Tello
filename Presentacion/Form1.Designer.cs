@@ -51,14 +51,15 @@ namespace Presentacion
             this.grillaArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grillaArticulos.Location = new System.Drawing.Point(43, 75);
             this.grillaArticulos.Name = "grillaArticulos";
-            this.grillaArticulos.Size = new System.Drawing.Size(472, 217);
+            this.grillaArticulos.Size = new System.Drawing.Size(443, 217);
             this.grillaArticulos.TabIndex = 0;
             // 
             // pbImagen
             // 
-            this.pbImagen.Location = new System.Drawing.Point(576, 75);
+            this.pbImagen.Location = new System.Drawing.Point(545, 75);
             this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(246, 217);
+            this.pbImagen.Size = new System.Drawing.Size(287, 217);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 1;
             this.pbImagen.TabStop = false;
             // 
@@ -178,6 +179,7 @@ namespace Presentacion
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Catalogo";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grillaArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.ResumeLayout(false);
