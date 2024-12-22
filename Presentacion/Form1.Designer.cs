@@ -53,6 +53,7 @@ namespace Presentacion
             this.grillaArticulos.Name = "grillaArticulos";
             this.grillaArticulos.Size = new System.Drawing.Size(443, 217);
             this.grillaArticulos.TabIndex = 0;
+            this.grillaArticulos.SelectionChanged += new System.EventHandler(this.grillaArticulos_SelectionChanged);
             // 
             // pbImagen
             // 

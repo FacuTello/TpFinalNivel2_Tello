@@ -38,8 +38,28 @@ namespace Presentacion
             ArticuloNegocio nuevoNegocio = new ArticuloNegocio();
             ListaArticulo = nuevoNegocio.listar();
             grillaArticulos.DataSource = ListaArticulo;
-            pbImagen.Load(ListaArticulo[0].Imagen);
+            cargarImagen(ListaArticulo[0].Imagen);
             
+        }
+
+        private void grillaArticulos_SelectionChanged(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)grillaArticulos.CurrentRow.DataBoundItem;
+            cargarImagen(seleccionado.Imagen);
+            
+        }
+
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+               pbImagen.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+
+                pbImagen.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");
+            }
         }
     }
 }
