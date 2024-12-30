@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
+using Negocio;
 
 namespace Presentacion
 {
@@ -17,6 +19,30 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        
+        private void btnCancelarSecundario_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnAceptarSecundario_Click(object sender, EventArgs e)
+        {
+
+            Articulo agregado = new Articulo();
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                agregado.Nombre = txtNombre.Text;
+                agregado.Descripcion = txtDescripcion.Text;
+                agregado.Precio = int.Parse(txtPrecio.Text);
+
+                negocio.agregar(agregado);
+                MessageBox.Show("Se ha agregado exitosamente");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

@@ -179,6 +179,7 @@ namespace Presentacion
             this.btnAceptarSecundario.TabIndex = 15;
             this.btnAceptarSecundario.Text = "Aceptar";
             this.btnAceptarSecundario.UseVisualStyleBackColor = true;
+            this.btnAceptarSecundario.Click += new System.EventHandler(this.btnAceptarSecundario_Click);
             // 
             // btnCancelarSecundario
             // 
@@ -188,6 +189,7 @@ namespace Presentacion
             this.btnCancelarSecundario.TabIndex = 16;
             this.btnCancelarSecundario.Text = "Cancelar";
             this.btnCancelarSecundario.UseVisualStyleBackColor = true;
+            this.btnCancelarSecundario.Click += new System.EventHandler(this.btnCancelarSecundario_Click);
             // 
             // FormSecundario
             // 

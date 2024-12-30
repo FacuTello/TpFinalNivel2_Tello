@@ -13,29 +13,25 @@ namespace Negocio
         public List<Articulo> listar() 
         {
             List<Articulo> listado = new List<Articulo>();
-            SqlConnection conexion =  new SqlConnection();
-            SqlCommand accion = new SqlCommand();
-            SqlDataReader lector;
+            AccesoDatos datos = new AccesoDatos();
 
             try
             {
-                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=CATALOGO_DB; integrated security =true";
-                accion.CommandType = System.Data.CommandType.Text;
-                accion.CommandText = "Select Nombre, Descripcion, ImagenUrl, Precio from ARTICULOS";
-                accion.Connection = conexion;
-                conexion.Open();
-                lector = accion.ExecuteReader();
+                datos.setearConsulta("Select Nombre, Descripcion, ImagenUrl, Precio from ARTICULOS");
+                datos.ejecutarLectura();
 
-                while (lector.Read())
+                while (datos.Lector.Read())
                 {
                     Articulo auxiliar = new Articulo();
-                    auxiliar.Nombre = (string)lector["Nombre"];
-                    auxiliar.Descripcion = (string)lector["Descripcion"];
-                    auxiliar.Imagen = (string)lector["ImagenUrl"];
-                    auxiliar.Precio = (decimal)lector["Precio"];
+                    auxiliar.Nombre = (string)datos.Lector["Nombre"];
+                    auxiliar.Descripcion = (string)datos.Lector["Descripcion"];
+                    auxiliar.Imagen = (string)datos.Lector["ImagenUrl"];
+                    auxiliar.Precio = (decimal)datos.Lector["Precio"];
 
                     listado.Add(auxiliar);
                 }
+
+
 
                 return listado;
             }
@@ -46,9 +42,28 @@ namespace Negocio
             }
             finally
             {
-                conexion.Close();
+                datos.cerrarConexion();
             }
+            
 
+        }
+
+        public void agregar(Articulo nuevo)
+        {
+
+            AccesoDatos datos = new AccesoDatos();
+
+
+
+            try
+            {
+
+            }
+            catch (Exception ex )
+            {
+
+                throw ex;
+            }
         }
     }
 }
