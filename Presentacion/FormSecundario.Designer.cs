@@ -216,6 +216,7 @@ namespace Presentacion
             this.Name = "FormSecundario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSecundario";
+            this.Load += new System.EventHandler(this.FormSecundario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSecundario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

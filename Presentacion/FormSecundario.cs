@@ -37,12 +37,18 @@ namespace Presentacion
 
                 negocio.agregar(agregado);
                 MessageBox.Show("Se ha agregado exitosamente");
+                Close();
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void FormSecundario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -57,12 +57,19 @@ namespace Negocio
 
             try
             {
+                datos.setearConsulta("insert into ARTICULOS (Nombre, Descripcion, Precio) values('" + nuevo.Nombre + "', '" + nuevo.Descripcion + "'," + nuevo.Precio + ")");
+                datos.ejecutarAccion();
+
 
             }
             catch (Exception ex )
             {
 
                 throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
         }
     }
