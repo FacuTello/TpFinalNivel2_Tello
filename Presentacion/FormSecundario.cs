@@ -34,7 +34,8 @@ namespace Presentacion
                 agregado.Nombre = txtNombre.Text;
                 agregado.Descripcion = txtDescripcion.Text;
                 agregado.Precio = int.Parse(txtPrecio.Text);
-
+                agregado.Categoria = (Categoria)cbCategoria.SelectedItem;
+                agregado.Marca = (Categoria)cbMarca.SelectedItem;
                 negocio.agregar(agregado);
                 MessageBox.Show("Se ha agregado exitosamente");
                 Close();
@@ -48,7 +49,17 @@ namespace Presentacion
 
         private void FormSecundario_Load(object sender, EventArgs e)
         {
+            CategoriaNegocio negocio = new CategoriaNegocio();
+            try
+            {
+                cbCategoria.DataSource = negocio.listarCategoria();
+                cbMarca.DataSource = negocio.listarMarca();
+            }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

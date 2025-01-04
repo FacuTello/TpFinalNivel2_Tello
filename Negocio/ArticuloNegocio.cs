@@ -17,14 +17,21 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select Nombre, Descripcion, ImagenUrl, Precio from ARTICULOS");
+                datos.setearConsulta("Select Codigo, Nombre, Descripcion, m.id as MarcaID, m.Descripcion as marcaDescripcion, c.id as CategoriaID, c.Descripcion as categoriaDescripcion, ImagenUrl, Precio from Articulos, marcas m, categorias c where a.IdMarca = m.id and a.IdCategoria = c.id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
                     Articulo auxiliar = new Articulo();
+                    auxiliar.codigoArticulo = (string)datos.Lector["Codigo"];
                     auxiliar.Nombre = (string)datos.Lector["Nombre"];
                     auxiliar.Descripcion = (string)datos.Lector["Descripcion"];
+                    auxiliar.Marca = new Categoria();
+                    auxiliar.Marca.Id = (int)datos.Lector["MarcaID"];
+                    auxiliar.Marca.Descripcion = (string)datos.Lector["marcaDescripcion"];
+                    auxiliar.Categoria = new Categoria();
+                    auxiliar.Categoria.Id = (int)datos.Lector["CategoriaID"];
+                    auxiliar.Categoria.Descripcion = (string)datos.Lector["categoriaDescripcion"];
                     auxiliar.Imagen = (string)datos.Lector["ImagenUrl"];
                     auxiliar.Precio = (decimal)datos.Lector["Precio"];
 
@@ -57,8 +64,10 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("insert into ARTICULOS (Nombre, Descripcion, Precio) values('" + nuevo.Nombre + "', '" + nuevo.Descripcion + "'," + nuevo.Precio + ")");
+                datos.setearConsulta("insert into ARTICULOS (Nombre, Descripcion, Precio) values('" + nuevo.Nombre + "', '" + nuevo.Descripcion + "', @Precio)");
+                datos.setearParametro("@precio", nuevo.Precio);
                 datos.ejecutarAccion();
+                
 
 
             }
