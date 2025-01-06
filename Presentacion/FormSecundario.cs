@@ -24,21 +24,13 @@ namespace Presentacion
             Close();
         }
 
-        private void btnAceptarSecundario_Click(object sender, EventArgs e)
-        {
-
-            Articulo agregado = new Articulo();
-            ArticuloNegocio negocio = new ArticuloNegocio();
+        private void FormSecundario_Load(object sender, EventArgs e)
+            {   
+            CategoriaNegocio negocio = new CategoriaNegocio();
             try
             {
-                agregado.Nombre = txtNombre.Text;
-                agregado.Descripcion = txtDescripcion.Text;
-                agregado.Precio = int.Parse(txtPrecio.Text);
-                agregado.Categoria = (Categoria)cbCategoria.SelectedItem;
-                agregado.Marca = (Categoria)cbMarca.SelectedItem;
-                negocio.agregar(agregado);
-                MessageBox.Show("Se ha agregado exitosamente");
-                Close();
+                cbCategoria.DataSource = negocio.listarCategoria();
+                cbMarca.DataSource = negocio.listarMarca();
             }
             catch (Exception ex)
             {
@@ -47,13 +39,23 @@ namespace Presentacion
             }
         }
 
-        private void FormSecundario_Load(object sender, EventArgs e)
+        private void btnAceptarSecundario_Click(object sender, EventArgs e)
         {
-            CategoriaNegocio negocio = new CategoriaNegocio();
+
+            Articulo agregado = new Articulo();
+            ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
-                cbCategoria.DataSource = negocio.listarCategoria();
-                cbMarca.DataSource = negocio.listarMarca();
+                agregado.Nombre = txtNombre.Text;
+                agregado.codigoArticulo = txtCodigoArticulo.Text;
+                agregado.Descripcion = txtDescripcion.Text;
+                agregado.Imagen = txtImagen.Text;
+                agregado.Marca = (Marca)cbMarca.SelectedItem;
+                agregado.Categoria = (Categoria)cbCategoria.SelectedItem;
+                agregado.Precio = int.Parse(txtPrecio.Text);
+                negocio.agregar(agregado);
+                MessageBox.Show("Se ha agregado exitosamente");
+                Close();
             }
             catch (Exception ex)
             {

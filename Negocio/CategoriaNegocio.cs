@@ -43,9 +43,9 @@ namespace Negocio
 
         }
 
-        public List<Categoria> listarMarca()
+        public List<Marca> listarMarca()
         {
-            List<Categoria> lista = new List<Categoria>();
+            List<Marca> lista = new List<Marca>();
             AccesoDatos datos = new AccesoDatos();
 
             try
@@ -55,7 +55,7 @@ namespace Negocio
 
                 while (datos.Lector.Read())
                 {
-                    Categoria auxiliar = new Categoria();
+                    Marca auxiliar = new Marca();
                     auxiliar.Id = (int)datos.Lector["id"];
                     auxiliar.Descripcion = (string)datos.Lector["descripcion"];
                     lista.Add(auxiliar);

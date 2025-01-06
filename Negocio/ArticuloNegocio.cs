@@ -17,7 +17,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select Codigo, Nombre, Descripcion, m.id as MarcaID, m.Descripcion as marcaDescripcion, c.id as CategoriaID, c.Descripcion as categoriaDescripcion, ImagenUrl, Precio from Articulos, marcas m, categorias c where a.IdMarca = m.id and a.IdCategoria = c.id");
+                datos.setearConsulta("Select Codigo, Nombre, a.Descripcion, m.Descripcion as Marca, c.Descripcion as Categoria, ImagenUrl, Precio from Articulos a, marcas m, categorias c where a.IdMarca = m.id and a.IdCategoria = c.id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -26,12 +26,10 @@ namespace Negocio
                     auxiliar.codigoArticulo = (string)datos.Lector["Codigo"];
                     auxiliar.Nombre = (string)datos.Lector["Nombre"];
                     auxiliar.Descripcion = (string)datos.Lector["Descripcion"];
-                    auxiliar.Marca = new Categoria();
-                    auxiliar.Marca.Id = (int)datos.Lector["MarcaID"];
-                    auxiliar.Marca.Descripcion = (string)datos.Lector["marcaDescripcion"];
+                    auxiliar.Marca = new Marca();
+                    auxiliar.Marca.Descripcion = (string)datos.Lector["Marca"];
                     auxiliar.Categoria = new Categoria();
-                    auxiliar.Categoria.Id = (int)datos.Lector["CategoriaID"];
-                    auxiliar.Categoria.Descripcion = (string)datos.Lector["categoriaDescripcion"];
+                    auxiliar.Categoria.Descripcion = (string)datos.Lector["Categoria"];
                     auxiliar.Imagen = (string)datos.Lector["ImagenUrl"];
                     auxiliar.Precio = (decimal)datos.Lector["Precio"];
 
@@ -60,12 +58,17 @@ namespace Negocio
 
             AccesoDatos datos = new AccesoDatos();
 
-
-
             try
             {
-                datos.setearConsulta("insert into ARTICULOS (Nombre, Descripcion, Precio) values('" + nuevo.Nombre + "', '" + nuevo.Descripcion + "', @Precio)");
+                datos.setearConsulta("insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, ImagenUrl, Precio) values (@codigo, @nombre, @descripcion, @marca, @categoria, @imagen, @precio)");
+                datos.setearParametro("@codigo", nuevo.codigoArticulo);
+                datos.setearParametro("@nombre", nuevo.Nombre);
+                datos.setearParametro("@descripcion", nuevo.Descripcion);
+                datos.setearParametro("@marca", nuevo.Marca.Id);
+                datos.setearParametro("@categoria", nuevo.Categoria.Id);
+                datos.setearParametro("@imagen", nuevo.Imagen);
                 datos.setearParametro("@precio", nuevo.Precio);
+
                 datos.ejecutarAccion();
                 
 

@@ -19,7 +19,7 @@ namespace Dominio
 
         public Categoria Categoria { get; set; }
 
-        public Categoria Marca { get; set; }
+        public Marca Marca { get; set; }
     }
 }      
 
