@@ -30,7 +30,8 @@ namespace Negocio
                     auxiliar.Marca.Descripcion = (string)datos.Lector["Marca"];
                     auxiliar.Categoria = new Categoria();
                     auxiliar.Categoria.Descripcion = (string)datos.Lector["Categoria"];
-                    auxiliar.Imagen = (string)datos.Lector["ImagenUrl"];
+                    if (!(datos.Lector["imagenUrl"] is DBNull))
+                        auxiliar.Imagen = (string)datos.Lector["ImagenUrl"];
                     auxiliar.Precio = (decimal)datos.Lector["Precio"];
 
                     listado.Add(auxiliar);

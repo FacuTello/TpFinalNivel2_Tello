@@ -48,9 +48,13 @@ namespace Presentacion
             // 
             // grillaArticulos
             // 
+            this.grillaArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grillaArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.grillaArticulos.Location = new System.Drawing.Point(43, 75);
+            this.grillaArticulos.MultiSelect = false;
             this.grillaArticulos.Name = "grillaArticulos";
+            this.grillaArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grillaArticulos.Size = new System.Drawing.Size(443, 217);
             this.grillaArticulos.TabIndex = 0;
             this.grillaArticulos.SelectionChanged += new System.EventHandler(this.grillaArticulos_SelectionChanged);
@@ -66,7 +70,7 @@ namespace Presentacion
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(201, 324);
+            this.btnAgregar.Location = new System.Drawing.Point(220, 311);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(113, 41);
             this.btnAgregar.TabIndex = 2;
@@ -76,7 +80,7 @@ namespace Presentacion
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(320, 324);
+            this.btnModificar.Location = new System.Drawing.Point(339, 311);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(110, 41);
             this.btnModificar.TabIndex = 3;
@@ -86,7 +90,7 @@ namespace Presentacion
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(436, 324);
+            this.btnEliminar.Location = new System.Drawing.Point(455, 311);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 41);
             this.btnEliminar.TabIndex = 4;
@@ -104,7 +108,7 @@ namespace Presentacion
             // 
             // btnDetalle
             // 
-            this.btnDetalle.Location = new System.Drawing.Point(545, 324);
+            this.btnDetalle.Location = new System.Drawing.Point(564, 311);
             this.btnDetalle.Name = "btnDetalle";
             this.btnDetalle.Size = new System.Drawing.Size(99, 41);
             this.btnDetalle.TabIndex = 6;

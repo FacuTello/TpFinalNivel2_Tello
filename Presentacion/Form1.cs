@@ -25,6 +25,7 @@ namespace Presentacion
         {
             FormSecundario ventanaSecundaria = new FormSecundario();
             ventanaSecundaria.ShowDialog();
+            cargar();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -35,11 +36,7 @@ namespace Presentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ArticuloNegocio nuevoNegocio = new ArticuloNegocio();
-            ListaArticulo = nuevoNegocio.listar();
-            grillaArticulos.DataSource = ListaArticulo;
-            cargarImagen(ListaArticulo[0].Imagen);
-            
+            cargar();
         }
 
         private void grillaArticulos_SelectionChanged(object sender, EventArgs e)
@@ -49,6 +46,25 @@ namespace Presentacion
             
         }
 
+        private void cargar()
+        {
+            ArticuloNegocio nuevoNegocio = new ArticuloNegocio();
+            try
+            {
+                ListaArticulo = nuevoNegocio.listar();
+                grillaArticulos.DataSource = ListaArticulo;
+                grillaArticulos.Columns["codigoArticulo"].Visible = false;
+                grillaArticulos.Columns["Imagen"].Visible = false;
+                grillaArticulos.Columns["Categoria"].Visible = false;
+                grillaArticulos.Columns["Marca"].Visible = false;
+                cargarImagen(ListaArticulo[0].Imagen);
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void cargarImagen(string imagen)
         {
             try
