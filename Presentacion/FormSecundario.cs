@@ -14,9 +14,16 @@ namespace Presentacion
 {
     public partial class FormSecundario : Form
     {
+        private Articulo articulo = null;
         public FormSecundario()
         {
             InitializeComponent();
+        }
+
+        public FormSecundario(Articulo articulo)
+        {
+            InitializeComponent();
+            this.articulo = articulo;
         }
 
         private void btnCancelarSecundario_Click(object sender, EventArgs e)
@@ -31,6 +38,16 @@ namespace Presentacion
             {
                 cbCategoria.DataSource = negocio.listarCategoria();
                 cbMarca.DataSource = negocio.listarMarca();
+
+                if (articulo != null)
+                {
+                    txtNombre.Text = articulo.Nombre;
+                    txtCodigoArticulo.Text = articulo.codigoArticulo;
+                    txtDescripcion.Text = articulo.Descripcion;
+                    txtImagen.Text = articulo.Imagen;
+                    
+
+                }
             }
             catch (Exception ex)
             {
@@ -61,6 +78,24 @@ namespace Presentacion
             {
 
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void txtImagen_Leave(object sender, EventArgs e)
+        {
+            cargarImagen(txtImagen.Text);
+        }
+
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+                pbSecundario.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+
+                pbSecundario.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");
             }
         }
     }

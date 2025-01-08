@@ -30,8 +30,11 @@ namespace Presentacion
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            FormSecundario modificar = new FormSecundario();
+            Articulo seleccionado;
+            seleccionado = (Articulo)grillaArticulos.CurrentRow.DataBoundItem;
+            FormSecundario modificar = new FormSecundario(seleccionado);
             modificar.ShowDialog();
+            cargar();
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -139,6 +139,7 @@ namespace Presentacion
             this.txtImagen.Name = "txtImagen";
             this.txtImagen.Size = new System.Drawing.Size(159, 20);
             this.txtImagen.TabIndex = 10;
+            this.txtImagen.Leave += new System.EventHandler(this.txtImagen_Leave);
             // 
             // txtPrecio
             // 
@@ -170,6 +171,7 @@ namespace Presentacion
             this.pbSecundario.Location = new System.Drawing.Point(348, 31);
             this.pbSecundario.Name = "pbSecundario";
             this.pbSecundario.Size = new System.Drawing.Size(260, 233);
+            this.pbSecundario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSecundario.TabIndex = 14;
             this.pbSecundario.TabStop = false;
             // 
