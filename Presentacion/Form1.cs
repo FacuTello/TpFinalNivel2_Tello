@@ -60,6 +60,7 @@ namespace Presentacion
                 grillaArticulos.Columns["Imagen"].Visible = false;
                 grillaArticulos.Columns["Categoria"].Visible = false;
                 grillaArticulos.Columns["Marca"].Visible = false;
+                grillaArticulos.Columns["Id"].Visible = false;
                 cargarImagen(ListaArticulo[0].Imagen);
             }
             catch (Exception ex)

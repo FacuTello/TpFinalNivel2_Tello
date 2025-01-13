@@ -18,12 +18,14 @@ namespace Presentacion
         public FormSecundario()
         {
             InitializeComponent();
+            Text = "Añadir Articulo";
         }
 
         public FormSecundario(Articulo articulo)
         {
             InitializeComponent();
             this.articulo = articulo;
+            Text = "Modificar Articulo";
         }
 
         private void btnCancelarSecundario_Click(object sender, EventArgs e)
@@ -37,7 +39,11 @@ namespace Presentacion
             try
             {
                 cbCategoria.DataSource = negocio.listarCategoria();
+                cbCategoria.ValueMember = "Id";
+                cbCategoria.DisplayMember = "Descripcion";
                 cbMarca.DataSource = negocio.listarMarca();
+                cbMarca.ValueMember = "Id";
+                cbMarca.DisplayMember = "Descripcion";
 
                 if (articulo != null)
                 {
@@ -45,6 +51,9 @@ namespace Presentacion
                     txtCodigoArticulo.Text = articulo.codigoArticulo;
                     txtDescripcion.Text = articulo.Descripcion;
                     txtImagen.Text = articulo.Imagen;
+                    cargarImagen(articulo.Imagen);
+                    cbCategoria.SelectedValue = articulo.Categoria.Id;
+                    cbMarca.SelectedValue = articulo.Marca.Id;
                     
 
                 }
@@ -59,20 +68,34 @@ namespace Presentacion
         private void btnAceptarSecundario_Click(object sender, EventArgs e)
         {
 
-            Articulo agregado = new Articulo();
+            
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
-                agregado.Nombre = txtNombre.Text;
-                agregado.codigoArticulo = txtCodigoArticulo.Text;
-                agregado.Descripcion = txtDescripcion.Text;
-                agregado.Imagen = txtImagen.Text;
-                agregado.Marca = (Marca)cbMarca.SelectedItem;
-                agregado.Categoria = (Categoria)cbCategoria.SelectedItem;
-                agregado.Precio = int.Parse(txtPrecio.Text);
-                negocio.agregar(agregado);
-                MessageBox.Show("Se ha agregado exitosamente");
-                Close();
+                if (articulo == null)
+                
+                    articulo = new Articulo();
+                
+                articulo.Nombre = txtNombre.Text;
+                articulo.codigoArticulo = txtCodigoArticulo.Text;
+                articulo.Descripcion = txtDescripcion.Text;
+                articulo.Imagen = txtImagen.Text;
+                articulo.Marca = (Marca)cbMarca.SelectedItem;
+                articulo.Categoria = (Categoria)cbCategoria.SelectedItem;
+                articulo.Precio = int.Parse(txtPrecio.Text);
+
+                if(articulo.Id != 0)
+                {
+                    negocio.modificar(articulo);
+                    MessageBox.Show("Se ha modificado correctamente");
+                }
+                else
+                {
+                    negocio.agregar(articulo);
+                    MessageBox.Show("Se ha agregado exitosamente");
+                }
+                
+                    Close();
             }
             catch (Exception ex)
             {

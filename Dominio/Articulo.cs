@@ -23,6 +23,8 @@ namespace Dominio
         public Categoria Categoria { get; set; }
 
         public Marca Marca { get; set; }
+
+        public int Id { get; set; }
     }
 }      
 
