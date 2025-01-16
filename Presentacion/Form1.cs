@@ -104,5 +104,13 @@ namespace Presentacion
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            Articulo articulo;
+            articulo = (Articulo)grillaArticulos.CurrentRow.DataBoundItem;
+            Detalle detalle = new Detalle(articulo);
+            detalle.ShowDialog();
+        }
     }
 }

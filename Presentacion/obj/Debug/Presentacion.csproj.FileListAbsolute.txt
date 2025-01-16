@@ -24,3 +24,4 @@ C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\bin\Debug\Dominio.pdb
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\bin\Debug\Negocio.pdb
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Presentacion\obj\Debug\Presentacion.Detalle.resources
