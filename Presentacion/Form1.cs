@@ -40,13 +40,16 @@ namespace Presentacion
         private void Form1_Load(object sender, EventArgs e)
         {
             cargar();
+            cbCampo.Items.Add("Precio");
+            cbCampo.Items.Add("Nombre");
+            cbCampo.Items.Add("Descripcion");
         }
 
         private void grillaArticulos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado = (Articulo)grillaArticulos.CurrentRow.DataBoundItem;
             cargarImagen(seleccionado.Imagen);
-            
+
         }
 
         private void cargar()
@@ -65,7 +68,7 @@ namespace Presentacion
             }
             catch (Exception ex)
             {
-                
+
                 MessageBox.Show(ex.ToString());
             }
         }
@@ -73,7 +76,7 @@ namespace Presentacion
         {
             try
             {
-               pbImagen.Load(imagen);
+                pbImagen.Load(imagen);
             }
             catch (Exception ex)
             {
@@ -111,6 +114,53 @@ namespace Presentacion
             articulo = (Articulo)grillaArticulos.CurrentRow.DataBoundItem;
             Detalle detalle = new Detalle(articulo);
             detalle.ShowDialog();
+        }
+
+        private void cbCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opcion = cbCampo.SelectedItem.ToString();
+
+            switch (opcion)
+            {
+                case "Precio":
+                    cbCriterio.Items.Clear();
+                    cbCriterio.Items.Add("Mayor a :");
+                    cbCriterio.Items.Add("Igual a :");
+                    cbCriterio.Items.Add("Menor a :");
+                    break;
+                case "Nombre":
+                    cbCriterio.Items.Clear();
+                    cbCriterio.Items.Add("Empieza con :");
+                    cbCriterio.Items.Add("Termina con :");
+                    cbCriterio.Items.Add("Contiene :");
+                    break;
+                case "Descripcion":
+                    cbCriterio.Items.Clear();
+                    cbCriterio.Items.Add("Empieza con :");
+                    cbCriterio.Items.Add("Termina con :");
+                    cbCriterio.Items.Add("Contiene :");
+                    break;
+                default:
+                    // No hacer nada
+                    break;
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                string campo = cbCampo.SelectedItem.ToString();
+                string criterio = cbCriterio.SelectedItem.ToString();
+                string filtro = textBoxFiltro.Text;
+                grillaArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
+             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

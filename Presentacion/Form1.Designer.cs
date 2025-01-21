@@ -39,9 +39,9 @@ namespace Presentacion
             this.labelCampo = new System.Windows.Forms.Label();
             this.labelCriterio = new System.Windows.Forms.Label();
             this.labelFiltro = new System.Windows.Forms.Label();
-            this.textBoxCampo = new System.Windows.Forms.TextBox();
-            this.textBoxCriterio = new System.Windows.Forms.TextBox();
             this.textBoxFiltro = new System.Windows.Forms.TextBox();
+            this.cbCampo = new System.Windows.Forms.ComboBox();
+            this.cbCriterio = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grillaArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
@@ -106,6 +106,7 @@ namespace Presentacion
             this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnDetalle
             // 
@@ -144,20 +145,6 @@ namespace Presentacion
             this.labelFiltro.TabIndex = 9;
             this.labelFiltro.Text = "Filtro :";
             // 
-            // textBoxCampo
-            // 
-            this.textBoxCampo.Location = new System.Drawing.Point(132, 31);
-            this.textBoxCampo.Name = "textBoxCampo";
-            this.textBoxCampo.Size = new System.Drawing.Size(141, 20);
-            this.textBoxCampo.TabIndex = 10;
-            // 
-            // textBoxCriterio
-            // 
-            this.textBoxCriterio.Location = new System.Drawing.Point(339, 31);
-            this.textBoxCriterio.Name = "textBoxCriterio";
-            this.textBoxCriterio.Size = new System.Drawing.Size(141, 20);
-            this.textBoxCriterio.TabIndex = 11;
-            // 
             // textBoxFiltro
             // 
             this.textBoxFiltro.Location = new System.Drawing.Point(527, 31);
@@ -165,14 +152,33 @@ namespace Presentacion
             this.textBoxFiltro.Size = new System.Drawing.Size(141, 20);
             this.textBoxFiltro.TabIndex = 12;
             // 
+            // cbCampo
+            // 
+            this.cbCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCampo.FormattingEnabled = true;
+            this.cbCampo.Location = new System.Drawing.Point(132, 30);
+            this.cbCampo.Name = "cbCampo";
+            this.cbCampo.Size = new System.Drawing.Size(140, 21);
+            this.cbCampo.TabIndex = 13;
+            this.cbCampo.SelectedIndexChanged += new System.EventHandler(this.cbCampo_SelectedIndexChanged);
+            // 
+            // cbCriterio
+            // 
+            this.cbCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCriterio.FormattingEnabled = true;
+            this.cbCriterio.Location = new System.Drawing.Point(339, 31);
+            this.cbCriterio.Name = "cbCriterio";
+            this.cbCriterio.Size = new System.Drawing.Size(141, 21);
+            this.cbCriterio.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 397);
+            this.Controls.Add(this.cbCriterio);
+            this.Controls.Add(this.cbCampo);
             this.Controls.Add(this.textBoxFiltro);
-            this.Controls.Add(this.textBoxCriterio);
-            this.Controls.Add(this.textBoxCampo);
             this.Controls.Add(this.labelFiltro);
             this.Controls.Add(this.labelCriterio);
             this.Controls.Add(this.labelCampo);
@@ -206,9 +212,9 @@ namespace Presentacion
         private System.Windows.Forms.Label labelCampo;
         private System.Windows.Forms.Label labelCriterio;
         private System.Windows.Forms.Label labelFiltro;
-        private System.Windows.Forms.TextBox textBoxCampo;
-        private System.Windows.Forms.TextBox textBoxCriterio;
         private System.Windows.Forms.TextBox textBoxFiltro;
+        private System.Windows.Forms.ComboBox cbCampo;
+        private System.Windows.Forms.ComboBox cbCriterio;
     }
 }
 
