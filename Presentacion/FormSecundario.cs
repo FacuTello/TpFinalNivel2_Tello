@@ -54,6 +54,7 @@ namespace Presentacion
                     cargarImagen(articulo.Imagen);
                     cbCategoria.SelectedValue = articulo.Categoria.Id;
                     cbMarca.SelectedValue = articulo.Marca.Id;
+                    txtPrecio.Text = articulo.Precio.ToString();
                     
 
                 }
