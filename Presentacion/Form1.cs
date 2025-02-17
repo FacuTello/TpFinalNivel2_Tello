@@ -146,11 +146,58 @@ namespace Presentacion
             }
         }
 
+        private bool validarFiltro()
+        {
+            if (cbCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor seleccione un campo");
+                return true;
+            }
+
+            if (cbCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor seleccione un criterio");
+                return true;
+            }
+
+
+            if (cbCampo.SelectedItem.ToString() == "Precio")
+            {
+
+                if (string.IsNullOrEmpty(textBoxFiltro.Text))
+                {
+                    MessageBox.Show("Ingrese algun numero por favor");
+                    return true;
+                }
+
+                if (!(soloNumeros(textBoxFiltro.Text)))
+                {
+                    MessageBox.Show("Ingrese solamente numeros por favor");
+                    return true;
+                }
+            }
+                return false;
+        }
+
+        private bool soloNumeros(string cadena)
+        {
+            foreach (char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                    return false;
+            }
+
+            return true;
+        }
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
+                if (validarFiltro())
+                    return;
+
                 string campo = cbCampo.SelectedItem.ToString();
                 string criterio = cbCriterio.SelectedItem.ToString();
                 string filtro = textBoxFiltro.Text;
