@@ -55,7 +55,7 @@ namespace Presentacion
             this.grillaArticulos.MultiSelect = false;
             this.grillaArticulos.Name = "grillaArticulos";
             this.grillaArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grillaArticulos.Size = new System.Drawing.Size(443, 217);
+            this.grillaArticulos.Size = new System.Drawing.Size(473, 255);
             this.grillaArticulos.TabIndex = 0;
             this.grillaArticulos.SelectionChanged += new System.EventHandler(this.grillaArticulos_SelectionChanged);
             // 
@@ -63,14 +63,15 @@ namespace Presentacion
             // 
             this.pbImagen.Location = new System.Drawing.Point(545, 75);
             this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(287, 217);
+            this.pbImagen.Size = new System.Drawing.Size(346, 255);
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 1;
             this.pbImagen.TabStop = false;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(220, 311);
+            this.btnAgregar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(228, 353);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(113, 41);
             this.btnAgregar.TabIndex = 2;
@@ -80,7 +81,8 @@ namespace Presentacion
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(339, 311);
+            this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(366, 353);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(110, 41);
             this.btnModificar.TabIndex = 3;
@@ -90,7 +92,8 @@ namespace Presentacion
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(455, 311);
+            this.btnEliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(495, 353);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 41);
             this.btnEliminar.TabIndex = 4;
@@ -100,9 +103,10 @@ namespace Presentacion
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(674, 23);
+            this.btnBuscar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(797, 18);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(95, 34);
+            this.btnBuscar.Size = new System.Drawing.Size(114, 34);
             this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -110,9 +114,10 @@ namespace Presentacion
             // 
             // btnDetalle
             // 
-            this.btnDetalle.Location = new System.Drawing.Point(564, 311);
+            this.btnDetalle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetalle.Location = new System.Drawing.Point(615, 353);
             this.btnDetalle.Name = "btnDetalle";
-            this.btnDetalle.Size = new System.Drawing.Size(99, 41);
+            this.btnDetalle.Size = new System.Drawing.Size(130, 41);
             this.btnDetalle.TabIndex = 6;
             this.btnDetalle.Text = "Ver Detalle";
             this.btnDetalle.UseVisualStyleBackColor = true;
@@ -121,61 +126,71 @@ namespace Presentacion
             // labelCampo
             // 
             this.labelCampo.AutoSize = true;
-            this.labelCampo.Location = new System.Drawing.Point(80, 34);
+            this.labelCampo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCampo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelCampo.Location = new System.Drawing.Point(44, 22);
             this.labelCampo.Name = "labelCampo";
-            this.labelCampo.Size = new System.Drawing.Size(46, 13);
+            this.labelCampo.Size = new System.Drawing.Size(86, 22);
             this.labelCampo.TabIndex = 7;
             this.labelCampo.Text = "Campo :";
             // 
             // labelCriterio
             // 
             this.labelCriterio.AutoSize = true;
-            this.labelCriterio.Location = new System.Drawing.Point(288, 34);
+            this.labelCriterio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCriterio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelCriterio.Location = new System.Drawing.Point(299, 24);
             this.labelCriterio.Name = "labelCriterio";
-            this.labelCriterio.Size = new System.Drawing.Size(45, 13);
+            this.labelCriterio.Size = new System.Drawing.Size(90, 22);
             this.labelCriterio.TabIndex = 8;
             this.labelCriterio.Text = "Criterio :";
             // 
             // labelFiltro
             // 
             this.labelFiltro.AutoSize = true;
-            this.labelFiltro.Location = new System.Drawing.Point(486, 34);
+            this.labelFiltro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFiltro.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelFiltro.Location = new System.Drawing.Point(561, 24);
             this.labelFiltro.Name = "labelFiltro";
-            this.labelFiltro.Size = new System.Drawing.Size(35, 13);
+            this.labelFiltro.Size = new System.Drawing.Size(68, 22);
             this.labelFiltro.TabIndex = 9;
             this.labelFiltro.Text = "Filtro :";
             // 
             // textBoxFiltro
             // 
-            this.textBoxFiltro.Location = new System.Drawing.Point(527, 31);
+            this.textBoxFiltro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFiltro.Location = new System.Drawing.Point(635, 26);
             this.textBoxFiltro.Name = "textBoxFiltro";
-            this.textBoxFiltro.Size = new System.Drawing.Size(141, 20);
+            this.textBoxFiltro.Size = new System.Drawing.Size(141, 23);
             this.textBoxFiltro.TabIndex = 12;
             // 
             // cbCampo
             // 
             this.cbCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCampo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCampo.FormattingEnabled = true;
-            this.cbCampo.Location = new System.Drawing.Point(132, 30);
+            this.cbCampo.Location = new System.Drawing.Point(137, 25);
             this.cbCampo.Name = "cbCampo";
-            this.cbCampo.Size = new System.Drawing.Size(140, 21);
+            this.cbCampo.Size = new System.Drawing.Size(140, 23);
             this.cbCampo.TabIndex = 13;
             this.cbCampo.SelectedIndexChanged += new System.EventHandler(this.cbCampo_SelectedIndexChanged);
             // 
             // cbCriterio
             // 
             this.cbCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCriterio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCriterio.FormattingEnabled = true;
-            this.cbCriterio.Location = new System.Drawing.Point(339, 31);
+            this.cbCriterio.Location = new System.Drawing.Point(395, 25);
             this.cbCriterio.Name = "cbCriterio";
-            this.cbCriterio.Size = new System.Drawing.Size(141, 21);
+            this.cbCriterio.Size = new System.Drawing.Size(141, 23);
             this.cbCriterio.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 397);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(999, 436);
             this.Controls.Add(this.cbCriterio);
             this.Controls.Add(this.cbCampo);
             this.Controls.Add(this.textBoxFiltro);
@@ -189,6 +204,8 @@ namespace Presentacion
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.grillaArticulos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Catalogo";

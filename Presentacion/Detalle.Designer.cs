@@ -47,112 +47,137 @@ namespace Presentacion
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(62, 49);
+            this.lblCodigo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(68, 30);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(49, 13);
+            this.lblCodigo.Size = new System.Drawing.Size(91, 22);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Codigo : ";
+            this.lblCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(62, 76);
+            this.lblNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(68, 68);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(50, 13);
+            this.lblNombre.Size = new System.Drawing.Size(94, 22);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre :";
+            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(62, 110);
+            this.lblDescripcion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(68, 102);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(69, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(130, 22);
             this.lblDescripcion.TabIndex = 2;
             this.lblDescripcion.Text = "Descripcion :";
+            this.lblDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(62, 158);
+            this.lblMarca.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Location = new System.Drawing.Point(68, 185);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(43, 13);
+            this.lblMarca.Size = new System.Drawing.Size(78, 22);
             this.lblMarca.TabIndex = 3;
             this.lblMarca.Text = "Marca :";
+            this.lblMarca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(62, 185);
+            this.lblCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(68, 222);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(58, 13);
+            this.lblCategoria.Size = new System.Drawing.Size(111, 22);
             this.lblCategoria.TabIndex = 4;
             this.lblCategoria.Text = "Categoria :";
+            this.lblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(62, 129);
+            this.lblPrecio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(68, 143);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(43, 13);
+            this.lblPrecio.Size = new System.Drawing.Size(80, 22);
             this.lblPrecio.TabIndex = 5;
             this.lblPrecio.Text = "Precio :";
+            this.lblPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // codigoDetalle
             // 
             this.codigoDetalle.AutoSize = true;
-            this.codigoDetalle.Location = new System.Drawing.Point(145, 49);
+            this.codigoDetalle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codigoDetalle.Location = new System.Drawing.Point(224, 30);
             this.codigoDetalle.Name = "codigoDetalle";
-            this.codigoDetalle.Size = new System.Drawing.Size(0, 13);
+            this.codigoDetalle.Size = new System.Drawing.Size(0, 22);
             this.codigoDetalle.TabIndex = 6;
+            this.codigoDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nombreDetalle
             // 
             this.nombreDetalle.AutoSize = true;
-            this.nombreDetalle.Location = new System.Drawing.Point(139, 76);
+            this.nombreDetalle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreDetalle.Location = new System.Drawing.Point(224, 68);
             this.nombreDetalle.Name = "nombreDetalle";
-            this.nombreDetalle.Size = new System.Drawing.Size(0, 13);
+            this.nombreDetalle.Size = new System.Drawing.Size(0, 22);
             this.nombreDetalle.TabIndex = 7;
+            this.nombreDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // descripcionDetalle
             // 
             this.descripcionDetalle.AutoSize = true;
-            this.descripcionDetalle.Location = new System.Drawing.Point(145, 110);
+            this.descripcionDetalle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripcionDetalle.Location = new System.Drawing.Point(224, 102);
             this.descripcionDetalle.Name = "descripcionDetalle";
-            this.descripcionDetalle.Size = new System.Drawing.Size(0, 13);
+            this.descripcionDetalle.Size = new System.Drawing.Size(0, 22);
             this.descripcionDetalle.TabIndex = 8;
+            this.descripcionDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // marcaDetalle
             // 
             this.marcaDetalle.AutoSize = true;
-            this.marcaDetalle.Location = new System.Drawing.Point(131, 158);
+            this.marcaDetalle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.marcaDetalle.Location = new System.Drawing.Point(224, 185);
             this.marcaDetalle.Name = "marcaDetalle";
-            this.marcaDetalle.Size = new System.Drawing.Size(0, 13);
+            this.marcaDetalle.Size = new System.Drawing.Size(0, 22);
             this.marcaDetalle.TabIndex = 9;
+            this.marcaDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // categoriaDetalle
             // 
             this.categoriaDetalle.AutoSize = true;
-            this.categoriaDetalle.Location = new System.Drawing.Point(126, 171);
+            this.categoriaDetalle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoriaDetalle.Location = new System.Drawing.Point(224, 222);
             this.categoriaDetalle.Name = "categoriaDetalle";
-            this.categoriaDetalle.Size = new System.Drawing.Size(0, 13);
+            this.categoriaDetalle.Size = new System.Drawing.Size(0, 22);
             this.categoriaDetalle.TabIndex = 10;
+            this.categoriaDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // precioDetalle
             // 
             this.precioDetalle.AutoSize = true;
-            this.precioDetalle.Location = new System.Drawing.Point(126, 129);
+            this.precioDetalle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.precioDetalle.Location = new System.Drawing.Point(224, 143);
             this.precioDetalle.Name = "precioDetalle";
-            this.precioDetalle.Size = new System.Drawing.Size(0, 13);
+            this.precioDetalle.Size = new System.Drawing.Size(0, 22);
             this.precioDetalle.TabIndex = 11;
+            this.precioDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAceptarDetalle
             // 
-            this.btnAceptarDetalle.Location = new System.Drawing.Point(89, 234);
+            this.btnAceptarDetalle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptarDetalle.Location = new System.Drawing.Point(147, 293);
             this.btnAceptarDetalle.Name = "btnAceptarDetalle";
             this.btnAceptarDetalle.Size = new System.Drawing.Size(113, 35);
             this.btnAceptarDetalle.TabIndex = 12;
-            this.btnAceptarDetalle.Text = "Aceptar";
+            this.btnAceptarDetalle.Text = "Cerrar";
             this.btnAceptarDetalle.UseVisualStyleBackColor = true;
             this.btnAceptarDetalle.Click += new System.EventHandler(this.btnAceptarDetalle_Click);
             // 
@@ -160,7 +185,8 @@ namespace Presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 450);
+            this.BackColor = System.Drawing.Color.RosyBrown;
+            this.ClientSize = new System.Drawing.Size(408, 384);
             this.Controls.Add(this.btnAceptarDetalle);
             this.Controls.Add(this.precioDetalle);
             this.Controls.Add(this.categoriaDetalle);
@@ -174,6 +200,8 @@ namespace Presentacion
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Detalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalle";

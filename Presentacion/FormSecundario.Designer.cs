@@ -52,118 +52,132 @@ namespace Presentacion
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(32, 31);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(50, 13);
+            this.lblNombre.Size = new System.Drawing.Size(66, 15);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre :";
             // 
             // lblCodigoArticulo
             // 
             this.lblCodigoArticulo.AutoSize = true;
+            this.lblCodigoArticulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigoArticulo.Location = new System.Drawing.Point(32, 69);
             this.lblCodigoArticulo.Name = "lblCodigoArticulo";
-            this.lblCodigoArticulo.Size = new System.Drawing.Size(93, 13);
+            this.lblCodigoArticulo.Size = new System.Drawing.Size(63, 15);
             this.lblCodigoArticulo.TabIndex = 1;
-            this.lblCodigoArticulo.Text = "Codigo de Articulo";
+            this.lblCodigoArticulo.Text = "Codigo : ";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(32, 110);
+            this.lblDescripcion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(32, 107);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(69, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(93, 15);
             this.lblDescripcion.TabIndex = 2;
             this.lblDescripcion.Text = "Descripcion :";
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
+            this.lblMarca.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.Location = new System.Drawing.Point(32, 177);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(43, 13);
+            this.lblMarca.Size = new System.Drawing.Size(55, 15);
             this.lblMarca.TabIndex = 3;
             this.lblMarca.Text = "Marca :";
             // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.Location = new System.Drawing.Point(32, 216);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(58, 13);
+            this.lblCategoria.Size = new System.Drawing.Size(79, 15);
             this.lblCategoria.TabIndex = 4;
             this.lblCategoria.Text = "Categoria :";
             // 
             // lblImagen
             // 
             this.lblImagen.AutoSize = true;
+            this.lblImagen.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImagen.Location = new System.Drawing.Point(32, 143);
             this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(48, 13);
+            this.lblImagen.Size = new System.Drawing.Size(62, 15);
             this.lblImagen.TabIndex = 5;
             this.lblImagen.Text = "Imagen :";
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.Location = new System.Drawing.Point(32, 251);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(43, 13);
+            this.lblPrecio.Size = new System.Drawing.Size(57, 15);
             this.lblPrecio.TabIndex = 6;
             this.lblPrecio.Text = "Precio :";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(140, 28);
+            this.txtNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(131, 28);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(159, 20);
+            this.txtNombre.Size = new System.Drawing.Size(159, 23);
             this.txtNombre.TabIndex = 7;
             // 
             // txtCodigoArticulo
             // 
-            this.txtCodigoArticulo.Location = new System.Drawing.Point(140, 66);
+            this.txtCodigoArticulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoArticulo.Location = new System.Drawing.Point(131, 66);
             this.txtCodigoArticulo.Name = "txtCodigoArticulo";
-            this.txtCodigoArticulo.Size = new System.Drawing.Size(159, 20);
+            this.txtCodigoArticulo.Size = new System.Drawing.Size(159, 23);
             this.txtCodigoArticulo.TabIndex = 8;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(140, 103);
+            this.txtDescripcion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(131, 104);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(159, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(159, 23);
             this.txtDescripcion.TabIndex = 9;
             // 
             // txtImagen
             // 
-            this.txtImagen.Location = new System.Drawing.Point(140, 140);
+            this.txtImagen.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImagen.Location = new System.Drawing.Point(131, 140);
             this.txtImagen.Name = "txtImagen";
-            this.txtImagen.Size = new System.Drawing.Size(159, 20);
+            this.txtImagen.Size = new System.Drawing.Size(159, 23);
             this.txtImagen.TabIndex = 10;
             this.txtImagen.Leave += new System.EventHandler(this.txtImagen_Leave);
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(140, 248);
+            this.txtPrecio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(131, 248);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(159, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(159, 23);
             this.txtPrecio.TabIndex = 11;
             // 
             // cbMarca
             // 
             this.cbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMarca.FormattingEnabled = true;
-            this.cbMarca.Location = new System.Drawing.Point(140, 174);
+            this.cbMarca.Location = new System.Drawing.Point(131, 174);
             this.cbMarca.Name = "cbMarca";
-            this.cbMarca.Size = new System.Drawing.Size(159, 21);
+            this.cbMarca.Size = new System.Drawing.Size(159, 23);
             this.cbMarca.TabIndex = 12;
             // 
             // cbCategoria
             // 
             this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(140, 213);
+            this.cbCategoria.Location = new System.Drawing.Point(131, 213);
             this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(159, 21);
+            this.cbCategoria.Size = new System.Drawing.Size(159, 23);
             this.cbCategoria.TabIndex = 13;
             // 
             // pbSecundario
@@ -177,7 +191,8 @@ namespace Presentacion
             // 
             // btnAceptarSecundario
             // 
-            this.btnAceptarSecundario.Location = new System.Drawing.Point(150, 300);
+            this.btnAceptarSecundario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptarSecundario.Location = new System.Drawing.Point(190, 310);
             this.btnAceptarSecundario.Name = "btnAceptarSecundario";
             this.btnAceptarSecundario.Size = new System.Drawing.Size(120, 36);
             this.btnAceptarSecundario.TabIndex = 15;
@@ -187,7 +202,8 @@ namespace Presentacion
             // 
             // btnCancelarSecundario
             // 
-            this.btnCancelarSecundario.Location = new System.Drawing.Point(331, 300);
+            this.btnCancelarSecundario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarSecundario.Location = new System.Drawing.Point(371, 310);
             this.btnCancelarSecundario.Name = "btnCancelarSecundario";
             this.btnCancelarSecundario.Size = new System.Drawing.Size(112, 36);
             this.btnCancelarSecundario.TabIndex = 16;
@@ -199,7 +215,8 @@ namespace Presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 364);
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.ClientSize = new System.Drawing.Size(648, 398);
             this.Controls.Add(this.btnCancelarSecundario);
             this.Controls.Add(this.btnAceptarSecundario);
             this.Controls.Add(this.pbSecundario);
@@ -217,6 +234,8 @@ namespace Presentacion
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblCodigoArticulo);
             this.Controls.Add(this.lblNombre);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormSecundario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSecundario";
