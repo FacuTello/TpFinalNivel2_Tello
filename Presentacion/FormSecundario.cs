@@ -38,12 +38,7 @@ namespace Presentacion
             CategoriaNegocio negocio = new CategoriaNegocio();
             try
             {
-                cbCategoria.DataSource = negocio.listarCategoria();
-                cbCategoria.ValueMember = "Id";
-                cbCategoria.DisplayMember = "Descripcion";
-                cbMarca.DataSource = negocio.listarMarca();
-                cbMarca.ValueMember = "Id";
-                cbMarca.DisplayMember = "Descripcion";
+                
 
                 if (articulo != null)
                 {
@@ -54,7 +49,7 @@ namespace Presentacion
                     cargarImagen(articulo.Imagen);
                     cbCategoria.SelectedValue = articulo.Categoria.Id;
                     cbMarca.SelectedValue = articulo.Marca.Id;
-                    txtPrecio.Text = articulo.Precio.ToString();
+                    txtPrecioCompra.Text = articulo.Precio.ToString();
                     
 
                 }
@@ -83,7 +78,7 @@ namespace Presentacion
                 articulo.Imagen = txtImagen.Text;
                 articulo.Marca = (Marca)cbMarca.SelectedItem;
                 articulo.Categoria = (Categoria)cbCategoria.SelectedItem;
-                articulo.Precio = int.Parse(txtPrecio.Text);
+                articulo.Precio = int.Parse(txtPrecioCompra.Text);
 
                 if(articulo.Id != 0)
                 {
@@ -105,22 +100,8 @@ namespace Presentacion
             }
         }
 
-        private void txtImagen_Leave(object sender, EventArgs e)
-        {
-            cargarImagen(txtImagen.Text);
-        }
+        
 
-        private void cargarImagen(string imagen)
-        {
-            try
-            {
-                pbSecundario.Load(imagen);
-            }
-            catch (Exception ex)
-            {
-
-                pbSecundario.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");
-            }
-        }
+        
     }
 }

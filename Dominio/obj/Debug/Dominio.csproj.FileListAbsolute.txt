@@ -4,3 +4,9 @@ C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Dominio\obj\
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Dominio\obj\Debug\Dominio.dll
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Dominio\obj\Debug\Dominio.pdb
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Dominio\bin\Debug\Dominio.dll
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Dominio\bin\Debug\Dominio.pdb
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Dominio\obj\Debug\Dominio.dll
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Dominio\obj\Debug\Dominio.pdb

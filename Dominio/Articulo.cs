@@ -11,18 +11,24 @@ namespace Dominio
     public class Articulo
     {
 
-        public string Nombre { get; set; }
+        
 
         public string codigoArticulo { get; set; }
 
         [DisplayName("Descripción")]
         public string Descripcion { get; set; }
-        public string Imagen { get; set; }
-        public decimal Precio { get; set; }
 
-        public Categoria Categoria { get; set; }
+        [DisplayName("Precio de compra")]
+        public decimal precio_compra { get; set; }
 
-        public Marca Marca { get; set; }
+        [DisplayName("Precio de venta")]
+        public decimal precio_venta { get; set; }
+
+        public decimal ganancia { get; set; }
+
+        
+
+        
 
         public int Id { get; set; }
     }

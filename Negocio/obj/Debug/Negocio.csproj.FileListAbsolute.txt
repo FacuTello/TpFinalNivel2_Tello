@@ -7,3 +7,12 @@ C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Negocio\obj\
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Negocio\obj\Debug\Negocio.dll
 C:\Users\facun\OneDrive\Escritorio\Maxiprograma\TpFinalNivel2_Tello\Negocio\obj\Debug\Negocio.pdb
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\obj\Debug\Negocio.dll
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\obj\Debug\Negocio.pdb
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\bin\Debug\Negocio.dll
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\bin\Debug\Negocio.pdb
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\bin\Debug\Dominio.dll
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\bin\Debug\Dominio.pdb
+C:\Users\facun\OneDrive\Escritorio\Kiosco\ProyectoKiosco\Negocio\obj\Debug\Negocio.csproj.CopyComplete

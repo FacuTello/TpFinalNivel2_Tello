@@ -29,41 +29,23 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigoArticulo = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.lblImagen = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblPrecioCompra = new System.Windows.Forms.Label();
             this.txtCodigoArticulo = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtImagen = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.cbMarca = new System.Windows.Forms.ComboBox();
-            this.cbCategoria = new System.Windows.Forms.ComboBox();
-            this.pbSecundario = new System.Windows.Forms.PictureBox();
+            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.btnAceptarSecundario = new System.Windows.Forms.Button();
             this.btnCancelarSecundario = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSecundario)).BeginInit();
+            this.lblPrecioVenta = new System.Windows.Forms.Label();
+            this.txtPrecioVenta = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(32, 31);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(66, 15);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre :";
             // 
             // lblCodigoArticulo
             // 
             this.lblCodigoArticulo.AutoSize = true;
             this.lblCodigoArticulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoArticulo.Location = new System.Drawing.Point(32, 69);
+            this.lblCodigoArticulo.Location = new System.Drawing.Point(187, 99);
             this.lblCodigoArticulo.Name = "lblCodigoArticulo";
             this.lblCodigoArticulo.Size = new System.Drawing.Size(63, 15);
             this.lblCodigoArticulo.TabIndex = 1;
@@ -73,64 +55,26 @@ namespace Presentacion
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(32, 107);
+            this.lblDescripcion.Location = new System.Drawing.Point(187, 137);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(93, 15);
             this.lblDescripcion.TabIndex = 2;
             this.lblDescripcion.Text = "Descripcion :";
             // 
-            // lblMarca
+            // lblPrecioCompra
             // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(32, 177);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(55, 15);
-            this.lblMarca.TabIndex = 3;
-            this.lblMarca.Text = "Marca :";
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(32, 216);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(79, 15);
-            this.lblCategoria.TabIndex = 4;
-            this.lblCategoria.Text = "Categoria :";
-            // 
-            // lblImagen
-            // 
-            this.lblImagen.AutoSize = true;
-            this.lblImagen.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagen.Location = new System.Drawing.Point(32, 143);
-            this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(62, 15);
-            this.lblImagen.TabIndex = 5;
-            this.lblImagen.Text = "Imagen :";
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(32, 251);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(57, 15);
-            this.lblPrecio.TabIndex = 6;
-            this.lblPrecio.Text = "Precio :";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(131, 28);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(159, 23);
-            this.txtNombre.TabIndex = 7;
+            this.lblPrecioCompra.AutoSize = true;
+            this.lblPrecioCompra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioCompra.Location = new System.Drawing.Point(187, 178);
+            this.lblPrecioCompra.Name = "lblPrecioCompra";
+            this.lblPrecioCompra.Size = new System.Drawing.Size(129, 15);
+            this.lblPrecioCompra.TabIndex = 6;
+            this.lblPrecioCompra.Text = "Precio de compra :";
             // 
             // txtCodigoArticulo
             // 
             this.txtCodigoArticulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoArticulo.Location = new System.Drawing.Point(131, 66);
+            this.txtCodigoArticulo.Location = new System.Drawing.Point(355, 99);
             this.txtCodigoArticulo.Name = "txtCodigoArticulo";
             this.txtCodigoArticulo.Size = new System.Drawing.Size(159, 23);
             this.txtCodigoArticulo.TabIndex = 8;
@@ -138,56 +82,18 @@ namespace Presentacion
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(131, 104);
+            this.txtDescripcion.Location = new System.Drawing.Point(355, 134);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(159, 23);
             this.txtDescripcion.TabIndex = 9;
             // 
-            // txtImagen
+            // txtPrecioCompra
             // 
-            this.txtImagen.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImagen.Location = new System.Drawing.Point(131, 140);
-            this.txtImagen.Name = "txtImagen";
-            this.txtImagen.Size = new System.Drawing.Size(159, 23);
-            this.txtImagen.TabIndex = 10;
-            this.txtImagen.Leave += new System.EventHandler(this.txtImagen_Leave);
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(131, 248);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(159, 23);
-            this.txtPrecio.TabIndex = 11;
-            // 
-            // cbMarca
-            // 
-            this.cbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMarca.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMarca.FormattingEnabled = true;
-            this.cbMarca.Location = new System.Drawing.Point(131, 174);
-            this.cbMarca.Name = "cbMarca";
-            this.cbMarca.Size = new System.Drawing.Size(159, 23);
-            this.cbMarca.TabIndex = 12;
-            // 
-            // cbCategoria
-            // 
-            this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(131, 213);
-            this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(159, 23);
-            this.cbCategoria.TabIndex = 13;
-            // 
-            // pbSecundario
-            // 
-            this.pbSecundario.Location = new System.Drawing.Point(348, 31);
-            this.pbSecundario.Name = "pbSecundario";
-            this.pbSecundario.Size = new System.Drawing.Size(260, 233);
-            this.pbSecundario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbSecundario.TabIndex = 14;
-            this.pbSecundario.TabStop = false;
+            this.txtPrecioCompra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioCompra.Location = new System.Drawing.Point(355, 175);
+            this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.Size = new System.Drawing.Size(159, 23);
+            this.txtPrecioCompra.TabIndex = 11;
             // 
             // btnAceptarSecundario
             // 
@@ -211,59 +117,61 @@ namespace Presentacion
             this.btnCancelarSecundario.UseVisualStyleBackColor = true;
             this.btnCancelarSecundario.Click += new System.EventHandler(this.btnCancelarSecundario_Click);
             // 
+            // lblPrecioVenta
+            // 
+            this.lblPrecioVenta.AutoSize = true;
+            this.lblPrecioVenta.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioVenta.Location = new System.Drawing.Point(187, 219);
+            this.lblPrecioVenta.Name = "lblPrecioVenta";
+            this.lblPrecioVenta.Size = new System.Drawing.Size(115, 15);
+            this.lblPrecioVenta.TabIndex = 17;
+            this.lblPrecioVenta.Text = "Precio de venta :";
+            // 
+            // txtPrecioVenta
+            // 
+            this.txtPrecioVenta.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioVenta.Location = new System.Drawing.Point(355, 216);
+            this.txtPrecioVenta.Name = "txtPrecioVenta";
+            this.txtPrecioVenta.Size = new System.Drawing.Size(159, 23);
+            this.txtPrecioVenta.TabIndex = 18;
+            // 
             // FormSecundario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(648, 398);
+            this.Controls.Add(this.txtPrecioVenta);
+            this.Controls.Add(this.lblPrecioVenta);
             this.Controls.Add(this.btnCancelarSecundario);
             this.Controls.Add(this.btnAceptarSecundario);
-            this.Controls.Add(this.pbSecundario);
-            this.Controls.Add(this.cbCategoria);
-            this.Controls.Add(this.cbMarca);
-            this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.txtImagen);
+            this.Controls.Add(this.txtPrecioCompra);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtCodigoArticulo);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.lblImagen);
-            this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.lblMarca);
+            this.Controls.Add(this.lblPrecioCompra);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblCodigoArticulo);
-            this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormSecundario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSecundario";
             this.Load += new System.EventHandler(this.FormSecundario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbSecundario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigoArticulo;
         private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Label lblImagen;
-        private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblPrecioCompra;
         private System.Windows.Forms.TextBox txtCodigoArticulo;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtImagen;
-        private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.ComboBox cbMarca;
-        private System.Windows.Forms.ComboBox cbCategoria;
-        private System.Windows.Forms.PictureBox pbSecundario;
+        private System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.Button btnAceptarSecundario;
         private System.Windows.Forms.Button btnCancelarSecundario;
+        private System.Windows.Forms.Label lblPrecioVenta;
+        private System.Windows.Forms.TextBox txtPrecioVenta;
     }
 }

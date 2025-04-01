@@ -40,15 +40,13 @@ namespace Presentacion
         private void Form1_Load(object sender, EventArgs e)
         {
             cargar();
-            cbCampo.Items.Add("Precio");
-            cbCampo.Items.Add("Nombre");
-            cbCampo.Items.Add("Descripcion");
+            
         }
 
         private void grillaArticulos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado = (Articulo)grillaArticulos.CurrentRow.DataBoundItem;
-            cargarImagen(seleccionado.Imagen);
+            
 
         }
 
@@ -59,12 +57,7 @@ namespace Presentacion
             {
                 ListaArticulo = nuevoNegocio.listar();
                 grillaArticulos.DataSource = ListaArticulo;
-                grillaArticulos.Columns["codigoArticulo"].Visible = false;
-                grillaArticulos.Columns["Imagen"].Visible = false;
-                grillaArticulos.Columns["Categoria"].Visible = false;
-                grillaArticulos.Columns["Marca"].Visible = false;
-                grillaArticulos.Columns["Id"].Visible = false;
-                cargarImagen(ListaArticulo[0].Imagen);
+                
             }
             catch (Exception ex)
             {
@@ -72,18 +65,7 @@ namespace Presentacion
                 MessageBox.Show(ex.ToString());
             }
         }
-        private void cargarImagen(string imagen)
-        {
-            try
-            {
-                pbImagen.Load(imagen);
-            }
-            catch (Exception ex)
-            {
-
-                pbImagen.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");
-            }
-        }
+        
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -108,77 +90,6 @@ namespace Presentacion
             }
         }
 
-        private void btnDetalle_Click(object sender, EventArgs e)
-        {
-            Articulo articulo;
-            articulo = (Articulo)grillaArticulos.CurrentRow.DataBoundItem;
-            Detalle detalle = new Detalle(articulo);
-            detalle.ShowDialog();
-        }
-
-        private void cbCampo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string opcion = cbCampo.SelectedItem.ToString();
-
-            switch (opcion)
-            {
-                case "Precio":
-                    cbCriterio.Items.Clear();
-                    cbCriterio.Items.Add("Mayor a :");
-                    cbCriterio.Items.Add("Igual a :");
-                    cbCriterio.Items.Add("Menor a :");
-                    break;
-                case "Nombre":
-                    cbCriterio.Items.Clear();
-                    cbCriterio.Items.Add("Empieza con :");
-                    cbCriterio.Items.Add("Termina con :");
-                    cbCriterio.Items.Add("Contiene :");
-                    break;
-                case "Descripcion":
-                    cbCriterio.Items.Clear();
-                    cbCriterio.Items.Add("Empieza con :");
-                    cbCriterio.Items.Add("Termina con :");
-                    cbCriterio.Items.Add("Contiene :");
-                    break;
-                default:
-                    // No hacer nada
-                    break;
-            }
-        }
-
-        private bool validarFiltro()
-        {
-            if (cbCampo.SelectedIndex < 0)
-            {
-                MessageBox.Show("Por favor seleccione un campo");
-                return true;
-            }
-
-            if (cbCriterio.SelectedIndex < 0)
-            {
-                MessageBox.Show("Por favor seleccione un criterio");
-                return true;
-            }
-
-
-            if (cbCampo.SelectedItem.ToString() == "Precio")
-            {
-
-                if (string.IsNullOrEmpty(textBoxFiltro.Text))
-                {
-                    MessageBox.Show("Ingrese algun numero por favor");
-                    return true;
-                }
-
-                if (!(soloNumeros(textBoxFiltro.Text)))
-                {
-                    MessageBox.Show("Ingrese solamente numeros por favor");
-                    return true;
-                }
-            }
-                return false;
-        }
-
         private bool soloNumeros(string cadena)
         {
             foreach (char caracter in cadena)
@@ -190,24 +101,6 @@ namespace Presentacion
             return true;
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            ArticuloNegocio negocio = new ArticuloNegocio();
-            try
-            {
-                if (validarFiltro())
-                    return;
-
-                string campo = cbCampo.SelectedItem.ToString();
-                string criterio = cbCriterio.SelectedItem.ToString();
-                string filtro = textBoxFiltro.Text;
-                grillaArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
-             }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.ToString());
-            }
-        }
+        
     }
 }
